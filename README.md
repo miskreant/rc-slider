@@ -1,3 +1,7 @@
+# Schrodinger
+
+Run ./build_helpers/buildDist.sh
+
 # rc-slider
 ---
 

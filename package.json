@@ -27,6 +27,7 @@
     "port": 8005
   },
   "scripts": {
+    "compile": "rc-tools run compile",
     "build": "rc-tools run build",
     "gh-pages": "rc-tools run gh-pages",
     "start": "rc-server",
@@ -38,13 +39,16 @@
     "browser-test-cover": "rc-tools run browser-test-cover"
   },
   "devDependencies": {
+    "babel-loader": "^6.2.4",
     "expect.js": "0.3.x",
+    "extract-text-webpack-plugin": "^1.0.1",
     "pre-commit": "1.x",
     "rc-server": "3.x",
     "rc-tools": "4.x",
     "react": "~0.14.0",
     "react-addons-test-utils": "^0.14.0",
-    "react-dom": "~0.14.0"
+    "react-dom": "~0.14.0",
+    "webpack": "^1.13.1"
   },
   "pre-commit": [
     "lint"
