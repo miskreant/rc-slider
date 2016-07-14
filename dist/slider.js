@@ -523,15 +523,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var lowerOffset = this.calcOffset(lowerBound);
 
 	      var handleClassName = prefixCls + '-handle';
+
+	      var upperClassName = handleClassName + ' ' + handleClassName + '-upper';
+	      var lowerClassName = handleClassName + ' ' + handleClassName + '-lower';
+
 	      var isNoTip = step === null || tipFormatter === null;
 
-	      var upper = (0, _react.cloneElement)(customHandle, { className: handleClassName,
+	      var upper = (0, _react.cloneElement)(customHandle, { className: upperClassName,
 	        noTip: isNoTip, tipTransitionName: tipTransitionName, tipFormatter: tipFormatter,
 	        vertical: vertical, offset: upperOffset, value: upperBound, dragging: handle === 'upperBound' });
 
 	      var lower = null;
 	      if (range) {
-	        lower = (0, _react.cloneElement)(customHandle, { className: handleClassName,
+	        lower = (0, _react.cloneElement)(customHandle, { className: lowerClassName,
 	          noTip: isNoTip, tipTransitionName: tipTransitionName, tipFormatter: tipFormatter,
 	          vertical: vertical, offset: lowerOffset, value: lowerBound, dragging: handle === 'lowerBound' });
 	      }
