@@ -422,7 +422,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	      var points = Object.keys(marks).map(parseFloat);
 	      if (step !== null) {
-	        var closestStep = Math.round(val / step) * step;
+	        var closestStep = Math.round((val - min) / step) * step + min;
 	        points.push(closestStep);
 	      }
 
